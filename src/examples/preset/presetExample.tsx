@@ -2,7 +2,7 @@ import {
   defaultPreset,
   drawerPreset,
   minimalPreset,
-} from "modal-stack-presets";
+} from "@ivex0002/stack-modal-presets";
 import {
   closeBtn,
   dangerBtn,
@@ -11,7 +11,7 @@ import {
   primaryBtn,
   secondaryBtn,
 } from "./styles";
-import { createModalStack } from "modal-stack";
+import { createStackModal } from "@ivex0002/stack-modal";
 
 const exampleModals = {
   all: () => <All />,
@@ -32,9 +32,9 @@ const presets = {
   minimal: minimalPreset,
   drawer: drawerPreset,
 };
-const modal = createModalStack(exampleModals, presets.default);
-// const modal = createModalStack(exampleModals, presets.minimal);
-// const modal = createModalStack(exampleModals, presets.drawer);
+const modal = createStackModal(exampleModals, presets.default);
+// const modal = createStackModal(exampleModals, presets.minimal);
+// const modal = createStackModal(exampleModals, presets.drawer);
 const modalKeys = Object.keys(exampleModals) as Array<
   keyof typeof exampleModals
 >;

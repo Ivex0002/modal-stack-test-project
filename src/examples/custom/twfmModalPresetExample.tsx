@@ -1,5 +1,5 @@
+import type { ModalLayout } from "@ivex0002/stack-modal";
 import { motion } from "framer-motion";
-import type { ModalLayout } from "modal-stack";
 import React from "react";
 
 const STACK_OFFSET = 80;

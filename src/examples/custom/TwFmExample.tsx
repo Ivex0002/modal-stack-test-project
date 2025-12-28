@@ -1,4 +1,4 @@
-import { createModalStack } from "modal-stack";
+import { createStackModal } from "@ivex0002/stack-modal";
 import { twfmModalLayoutExample } from "./twfmModalPresetExample";
 
 const twfmModals = {
@@ -15,7 +15,7 @@ const twfmModals = {
   helpDetail: () => <HelpDetail />,
 };
 
-const modal = createModalStack(twfmModals, twfmModalLayoutExample);
+const modal = createStackModal(twfmModals, twfmModalLayoutExample);
 
 const modalKeys = Object.keys(twfmModals) as Array<keyof typeof twfmModals>;
 

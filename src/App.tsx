@@ -13,6 +13,3 @@ export function App() {
     </>
   );
 }
-
-// npm i ../../modal-stack/packages/core/modal-stack-1.0.0.tgz
-// npm i ../../modal-stack/packages/presets/modal-stack-presets-1.0.0.tgz
